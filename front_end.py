@@ -47,7 +47,7 @@ if st.session_state.running:
 
 # Stage containers
 steps = {
-    "fetch": st.expander("📥 Fetching articles", expanded=True),
+    "fetch": st.expander("📥 Fetching articles", expanded=False),
     "process": st.expander("🧹 Processing data", expanded=False),
     "categorize": st.expander("🧠 Categorizing abstracts", expanded=False),
     "score": st.expander("📊 Calculating scores", expanded=False),

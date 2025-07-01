@@ -59,6 +59,8 @@ class SemanticScholarFetcher:
                             params=params,
                             timeout=30
                         )
+                        print(f"Status code: {response.status_code}")
+                        print(f"Response: {response.text}")
                         if response.status_code == 200:
                             break
                     except Exception as e:
